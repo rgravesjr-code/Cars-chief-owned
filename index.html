@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Roger Graves</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0f11;
+      --card: #1a1a1f;
+      --accent: #7c6af7;
+      --accent2: #a78bfa;
+      --text: #e8e8ee;
+      --muted: #888899;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid #2a2a35;
+      border-radius: 1.5rem;
+      padding: 3rem 2.5rem;
+      max-width: 480px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 48px rgba(124,106,247,0.08);
+    }
+
+    .avatar {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      margin: 0 auto 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #fff;
+      letter-spacing: -1px;
+    }
+
+    h1 {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(135deg, var(--text) 60%, var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .tagline {
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .links {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .link-btn {
+      display: block;
+      padding: 0.85rem 1.5rem;
+      border-radius: 0.75rem;
+      background: #23232b;
+      border: 1px solid #2e2e3a;
+      color: var(--text);
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    }
+
+    .link-btn:hover {
+      background: #2d2d38;
+      border-color: var(--accent);
+      transform: translateY(-1px);
+    }
+
+    .link-btn.primary {
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      border-color: transparent;
+      color: #fff;
+    }
+
+    .link-btn.primary:hover {
+      opacity: 0.9;
+      border-color: transparent;
+    }
+
+    footer {
+      margin-top: 2.5rem;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="avatar">RG</div>
+    <h1>Roger Graves</h1>
+    <p class="tagline">Welcome to my corner of the internet.</p>
+    <div class="links">
+      <a href="mailto:rgravesjr@gmail.com" class="link-btn primary">✉️ Get in Touch</a>
+      <a href="https://github.com/rgravesjr-code" class="link-btn" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://rogergraves.com" class="link-btn" target="_blank" rel="noopener">rogergraves.com</a>
+    </div>
+    <footer>Built with ⚔️ by egg</footer>
+  </div>
+</body>
+</html>
