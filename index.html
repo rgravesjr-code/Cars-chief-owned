@@ -3,128 +3,194 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roger Graves</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #0f0f11;
-      --card: #1a1a1f;
-      --accent: #7c6af7;
-      --accent2: #a78bfa;
-      --text: #e8e8ee;
-      --muted: #888899;
-    }
-
-    body {
-      background: var(--bg);
-      color: var(--text);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 2rem;
-    }
-
-    .card {
-      background: var(--card);
-      border: 1px solid #2a2a35;
-      border-radius: 1.5rem;
-      padding: 3rem 2.5rem;
-      max-width: 480px;
-      width: 100%;
-      text-align: center;
-      box-shadow: 0 8px 48px rgba(124,106,247,0.08);
-    }
-
-    .avatar {
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      margin: 0 auto 1.5rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 2.5rem;
-      font-weight: 700;
-      color: #fff;
-      letter-spacing: -1px;
-    }
-
-    h1 {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      margin-bottom: 0.5rem;
-      background: linear-gradient(135deg, var(--text) 60%, var(--accent2));
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-
-    .tagline {
-      color: var(--muted);
-      font-size: 1rem;
-      margin-bottom: 2rem;
-      line-height: 1.6;
-    }
-
-    .links {
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-    }
-
-    .link-btn {
-      display: block;
-      padding: 0.85rem 1.5rem;
-      border-radius: 0.75rem;
-      background: #23232b;
-      border: 1px solid #2e2e3a;
-      color: var(--text);
-      text-decoration: none;
-      font-size: 0.95rem;
-      font-weight: 500;
-      transition: background 0.15s, border-color 0.15s, transform 0.1s;
-    }
-
-    .link-btn:hover {
-      background: #2d2d38;
-      border-color: var(--accent);
-      transform: translateY(-1px);
-    }
-
-    .link-btn.primary {
-      background: linear-gradient(135deg, var(--accent), var(--accent2));
-      border-color: transparent;
-      color: #fff;
-    }
-
-    .link-btn.primary:hover {
-      opacity: 0.9;
-      border-color: transparent;
-    }
-
-    footer {
-      margin-top: 2.5rem;
-      color: var(--muted);
-      font-size: 0.78rem;
-    }
-  </style>
+  <title>A Lifetime of Cars — Roger Graves</title>
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <div class="card">
-    <div class="avatar">RG</div>
-    <h1>Roger Graves</h1>
-    <p class="tagline">Welcome to my corner of the internet.</p>
-    <div class="links">
-      <a href="mailto:rgravesjr@gmail.com" class="link-btn primary">✉️ Get in Touch</a>
-      <a href="https://github.com/rgravesjr-code" class="link-btn" target="_blank" rel="noopener">GitHub</a>
-      <a href="https://rogergraves.com" class="link-btn" target="_blank" rel="noopener">rogergraves.com</a>
-    </div>
-    <footer>Built with ⚔️ by egg</footer>
+
+<nav>
+  <a class="brand" href="index.html">⚙️ Roger Graves · Cars</a>
+  <ul class="nav-links">
+    <li><a href="#sports">Sports Cars</a></li>
+    <li><a href="#first">First Cars</a></li>
+    <li><a href="#family">Family Cars</a></li>
+    <li><a href="#motos">Motorcycles</a></li>
+  </ul>
+</nav>
+
+<section class="hero">
+  <h1>A Lifetime of Cars</h1>
+  <p class="subtitle">From a $115 1946 Pontiac in the Navy to a supercharged Miata — a journey through over six decades of automobiles, motorcycles, and memories.</p>
+  <p class="byline">By Roger Graves</p>
+  <div class="stats">
+    <div class="stat"><div class="num">30+</div><div class="label">Sports Cars</div></div>
+    <div class="stat"><div class="num">60+</div><div class="label">Family Cars</div></div>
+    <div class="stat"><div class="num">24</div><div class="label">Motorcycles</div></div>
+    <div class="stat"><div class="num">1957</div><div class="label">First Ride</div></div>
   </div>
+</section>
+
+<!-- SPORTS CARS -->
+<div class="section" id="sports">
+  <div class="section-header">
+    <h2>🏎️ Sports Cars</h2>
+    <div class="line"></div>
+  </div>
+  <div class="grid">
+    <a class="car-card" href="cars/1959-sprite-white.html">
+      <span class="year">1959 · Acquired '61</span>
+      <span class="name">Austin Healey Sprite</span>
+      <span class="tagline">White — my very first sports car</span>
+      <span class="arrow">View →</span>
+    </a>
+    <a class="car-card" href="cars/1963-tr3.html">
+      <span class="year">1963 · Acquired '62</span>
+      <span class="name">Triumph TR-3 Roadster</span>
+      <span class="tagline">Brand new — took on the honeymoon</span>
+      <span class="arrow">View →</span>
+    </a>
+    <a class="car-card" href="cars/1965-griffith.html">
+      <span class="year">1965 · Acquired '65</span>
+      <span class="name">Griffith Series 400</span>
+      <span class="tagline">289 HiPo V8 · 0–60 in 4.6s · Fastest ever owned</span>
+      <span class="arrow">View →</span>
+    </a>
+    <a class="car-card" href="cars/1965-corvette.html">
+      <span class="year">1965 · Acquired '66</span>
+      <span class="name">Corvette Roadster</span>
+      <span class="tagline">Dark green · 327 4-speed · My first Vet</span>
+      <span class="arrow">View →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1959 · Acquired '66</span>
+      <span class="name">Austin Healey 100-6</span>
+      <span class="tagline">Silver — excellent condition</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1986 · Acquired '95</span>
+      <span class="name">Porsche 944 Turbo</span>
+      <span class="tagline">43k miles — excellent &amp; fast</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1993 · Acquired '06</span>
+      <span class="name">Corvette Coupe</span>
+      <span class="tagline">White · 30k miles · 6-speed · One of the nicest</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">2002 · Acquired '09</span>
+      <span class="name">BMW Z3 3.0i</span>
+      <span class="tagline">Red · 5-speed · Only 27k miles</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+  </div>
+</div>
+
+<!-- FIRST CARS -->
+<div class="section" id="first" style="background: var(--bg2); margin: 0; max-width: 100%; padding: 4rem 0;">
+  <div style="max-width:1200px; margin:0 auto; padding: 0 2rem;">
+  <div class="section-header">
+    <h2>⚓ First Cars</h2>
+    <div class="line"></div>
+  </div>
+  <div class="grid">
+    <a class="car-card" href="#">
+      <span class="year">1946 · Purchased '57</span>
+      <span class="name">Pontiac</span>
+      <span class="tagline">$115 — first ever car, while in the Navy</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1955 · Purchased '60</span>
+      <span class="name">Mercury Convertible</span>
+      <span class="tagline">Red — the car where Roger met Diane</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1958 · Acquired '61</span>
+      <span class="name">Thunderbird</span>
+      <span class="tagline">Blue — first car as a civilian</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+  </div>
+  </div>
+</div>
+
+<!-- FAMILY CARS -->
+<div class="section" id="family">
+  <div class="section-header">
+    <h2>🚗 Family Cars</h2>
+    <div class="line"></div>
+  </div>
+  <div class="grid">
+    <a class="car-card" href="#">
+      <span class="year">1963 · Brand New '63</span>
+      <span class="name">Ford Fairlane 500</span>
+      <span class="tagline">4-speed — bought brand new</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1980 · New '80</span>
+      <span class="name">Thunderbird</span>
+      <span class="tagline">Black — brand new</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1989 · Acquired '90</span>
+      <span class="name">Ford Taurus SHO</span>
+      <span class="tagline">Dark red — a real performance sedan</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1991 · Acquired '96</span>
+      <span class="name">Lincoln Continental</span>
+      <span class="tagline">Titanium with grey leather — loaded</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+  </div>
+</div>
+
+<!-- MOTORCYCLES -->
+<div class="section" id="motos" style="background: var(--bg2); margin: 0; max-width: 100%; padding: 4rem 0;">
+  <div style="max-width:1200px; margin:0 auto; padding: 0 2rem;">
+  <div class="section-header">
+    <h2>🏍️ Motorcycles</h2>
+    <div class="line"></div>
+  </div>
+  <div class="grid">
+    <a class="car-card" href="#">
+      <span class="year">1965</span>
+      <span class="name">Honda Super Hawk</span>
+      <span class="tagline">Brand new — rode to Niagara Falls</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1970</span>
+      <span class="name">Honda 750</span>
+      <span class="tagline">Brand new — rode a lot with Larry Nevers</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">1997</span>
+      <span class="name">Harley Heritage Springer</span>
+      <span class="tagline">White — brand new and beautiful</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+    <a class="car-card" href="#">
+      <span class="year">2005</span>
+      <span class="name">Harley Ultra Classic</span>
+      <span class="tagline">Loaded with GPS — great touring bike</span>
+      <span class="arrow">Coming soon →</span>
+    </a>
+  </div>
+  </div>
+</div>
+
+<footer>
+  <p>© Roger Graves · A lifetime of machines, memories, and miles &nbsp;·&nbsp; Built with ⚔️ by <span>egg</span></p>
+</footer>
+
 </body>
 </html>
